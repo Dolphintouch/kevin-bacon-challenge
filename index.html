@@ -91,13 +91,29 @@
 .maryborough-gallery-card:hover{background:linear-gradient(145deg,#43798a,#143954)}
 @media(max-width:700px){.maryborough-gallery-card{grid-column:span 6}}
 @media(max-width:440px){.maryborough-gallery-card{grid-column:span 12}}
-</style></head>
+</style>
+  <style id="dolphintouch-youtube-video">
+    .video-section{background:linear-gradient(145deg,#102d42 0%,#0b1c31 100%);color:#fff8eb;padding:72px 0 84px}
+    .video-section .video-container{max-width:890px}
+    .video-section .video-intro{max-width:720px;margin:0 auto 28px;text-align:center}
+    .video-section .video-intro .eyebrow{color:#d6b078}
+    .video-section .video-intro h2{font:normal clamp(2.2rem,5vw,3.7rem)/1.16 Georgia,serif;margin:10px 0 15px;color:#fffaf3}
+    .video-section .video-intro h2 i{color:#a7dad6}
+    .video-section .video-intro p{max-width:620px;margin:0 auto;color:#d5e3e8;line-height:1.75}
+    .video-section .video-frame{aspect-ratio:16/9;overflow:hidden;border:1px solid #536e7e;border-radius:18px;background:#071523;box-shadow:0 22px 62px rgba(0,0,0,.25)}
+    .video-section .video-frame iframe{display:block;width:100%;height:100%;border:0}
+    .video-section .video-action{text-align:center;margin:24px 0 0}
+    .video-section .video-action .btn{font-size:.92rem}
+    .video-section .video-note{font-size:.83rem;color:#b7cbd6;margin:14px 0 0;text-align:center}
+    @media(max-width:730px){.video-section{padding:54px 0 62px}.video-section .video-frame{border-radius:12px}.video-section .video-intro h2{font-size:clamp(2rem,8.3vw,2.8rem)}}
+  </style>
+</head>
 <body>
   <header class="site-header">
     <div class="container header-in">
       <a class="brand" href="#top" aria-label="Dolphintouch, back to top"><span class="brand-icon" aria-hidden="true">6</span><span class="brand-name">The Kevin Bacon Challenge<span>by Dolphintouch</span></span></a>
       <button class="mobile-nav-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">☰</button>
-      <nav class="nav" id="siteNav" aria-label="Main navigation"><a href="#story">Our story</a><a href="#journeys">The journey</a><a href="#travel-diary">Travel diary</a><a href="./travel-updates.html">🌍 Worldwide Adventures</a><a href="#james-song">The song ♫</a><a href="#gallery">Photographs</a><a href="./adventures.html">Queensland adventure</a><a href="#join">Join in</a><a class="nav-cta" href="https://gc.link/TBBD905" target="_blank" rel="noopener noreferrer">Trackable #1 ↗</a></nav>
+      <nav class="nav" id="siteNav" aria-label="Main navigation"><a href="#story">Our story</a><a href="#journeys">The journey</a><a href="#watch-video">Watch video ▶</a><a href="#travel-diary">Travel diary</a><a href="./travel-updates.html">🌍 Worldwide Adventures</a><a href="#james-song">The song ♫</a><a href="#gallery">Photographs</a><a href="./adventures.html">Queensland adventure</a><a href="#join">Join in</a><a class="nav-cta" href="https://gc.link/TBBD905" target="_blank" rel="noopener noreferrer">Trackable #1 ↗</a></nav>
     </div>
   </header>
   <main id="top">
@@ -108,7 +124,7 @@
           <div class="eyebrow" style="margin-top:26px">A little idea with a big heart</div>
           <h1 id="heroTitle">Six degrees.<br>Six trackables.<br><em>One connected world.</em></h1>
           <p>What if six tiny travellers could show us just how connected we really are? Follow their journeys, discover the people and places they meet, and help kindness travel a little further.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#journeys">Follow the adventure <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#story">Read the story ↓</a></div>
+          <div class="hero-actions"><a class="btn btn-primary" href="#journeys">Follow the adventure <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#story">Read the story ↓</a><a class="btn btn-secondary" href="#watch-video">Watch the video ▶</a></div>
         </div>
         <div class="hero-photo-wrap">
           <div class="hero-spark" aria-hidden="true">✧</div>
@@ -119,6 +135,23 @@
       <div class="container hero-foot"><span>📍 <strong>Begun in Hervey Bay, Queensland</strong></span><span>🌍 <strong>Adventures across oceans</strong></span><span>♡ <strong>Powered by people and kindness</strong></span></div>
     </section>
     <div class="stats"><div class="container stats-grid"><div class="stat"><b>6</b><span>Original trackables</span></div><div class="stat"><b>3</b><span>Countries featured</span></div><div class="stat"><b>2026</b><span>The idea took flight</span></div><div class="stat"><b>∞</b><span>Possible connections</span></div></div></div>
+
+    <section class="video-section" id="watch-video" aria-labelledby="videoTitle">
+      <div class="container video-container">
+        <div class="video-intro">
+          <div class="eyebrow">A Dolphintouch YouTube video</div>
+          <h2 id="videoTitle">Watch the <i>Kevin Bacon Challenge</i></h2>
+          <p>See the adventure on video, then follow the six little travellers as their stories unfold around the world.</p>
+        </div>
+        <div class="video-frame">
+          <iframe src="https://www.youtube-nocookie.com/embed/M2O3ypsKUvk" title="Dolphintouch – Kevin Bacon Challenge YouTube video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-action">
+          <a class="btn btn-primary" href="https://youtu.be/M2O3ypsKUvk?si=mgLq3SWODZCugOPF" target="_blank" rel="noopener noreferrer">▶ Watch on YouTube ↗</a>
+        </div>
+        <p class="video-note">If the video player does not load, use the YouTube button above.</p>
+      </div>
+    </section>
     <section class="section story" id="story" aria-labelledby="storyTitle">
       <div class="container story-grid">
         <div><div class="eyebrow" style="color:#a66f4f">The story behind the journey</div><h2 class="headline" id="storyTitle">What if one little idea could <i>bring us together?</i></h2><p>I'm Dolphintouch, a newcomer to geocaching from Hervey Bay in Queensland, Australia. After watching Robson Green go geocaching in a YouTube video, I was inspired to try it for myself.</p><p>Then a thought came to me: what if I sent six trackables travelling around the world, inspired by the idea of <strong>Six Degrees of Kevin Bacon</strong>?</p><p>The familiar game links actors through their film connections. My version is a little broader: music, movies, people, places, stories, and those unexpected moments when one life touches another.</p><blockquote>“Perhaps, just perhaps, one of these little travellers might even reach Kevin Bacon himself.”</blockquote><p>But the bigger hope is to show that, even in uncertain times, strangers can come together through curiosity, peace and kindness. The journey matters more than the destination.</p><span class="story-ornament">With love, Dolphintouch ♡</span></div>
