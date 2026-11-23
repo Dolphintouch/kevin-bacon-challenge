@@ -97,7 +97,20 @@
 .maryborough-photo-card .gallery-caption small{display:block;font-size:.73rem;font-weight:500;opacity:.9;margin-top:4px}
 @media(max-width:700px){.maryborough-photo-card{grid-column:span 3;min-height:240px}}
 @media(max-width:440px){.maryborough-photo-card{grid-column:span 6;min-height:230px}}
-</style>
+
+    /* Geocaching News Australia announcement */
+    .magazine-alert{position:relative;overflow:hidden;background:linear-gradient(110deg,#123c50,#205466 54%,#16344b);color:#fff8e8;border-block:1px solid rgba(232,187,114,.5);text-align:center;padding:24px 16px 27px}
+    .magazine-alert::before{content:"✦       ✧       ✦       ✧       ✦";position:absolute;inset:0;display:flex;justify-content:center;align-items:center;font-size:1.9rem;letter-spacing:6vw;color:rgba(248,211,150,.13);pointer-events:none;animation:magGlow 5s ease-in-out infinite alternate}
+    .magazine-alert-inner{position:relative;z-index:1;max-width:850px;margin:auto}
+    .magazine-alert .mag-kicker{font-size:.77rem;letter-spacing:.17em;font-weight:850;text-transform:uppercase;color:#ffd995}
+    .magazine-alert h2{font:normal clamp(1.65rem,4vw,2.65rem)/1.18 Georgia,serif;margin:9px auto;color:#fff7df}
+    .magazine-alert p{margin:9px auto 19px;max-width:650px;color:#e5f1f0;font-size:.98rem;line-height:1.65}
+    .magazine-alert a{display:inline-block;padding:12px 23px;border-radius:99px;background:#f0c484;color:#17334b;text-decoration:none;font-weight:850;box-shadow:0 0 19px rgba(255,218,153,.25);transition:transform .2s,box-shadow .2s}
+    .magazine-alert a:hover{transform:translateY(-2px);box-shadow:0 0 28px rgba(255,218,153,.5)}
+    .magazine-alert a:focus-visible{outline:3px solid white;outline-offset:4px}
+    @keyframes magGlow{from{opacity:.4;transform:translateY(-8px)}to{opacity:1;transform:translateY(8px)}}
+    @media(prefers-reduced-motion:reduce){.magazine-alert::before{animation:none}}
+  </style>
 <style id="dolphintouch-community-v2">.magazine-cover-card{grid-column:span 3;min-height:250px;display:block;position:relative;border-radius:12px;overflow:hidden;background:#d3e7e3;text-decoration:none}.magazine-cover-card img{display:block;width:100%;height:100%;min-height:250px;object-fit:contain;background:#f4ecdc}.magazine-cover-card .gallery-caption{position:absolute;bottom:0;left:0;right:0;color:#fff;background:linear-gradient(transparent,#081d30e8);padding:30px 14px 13px;font-size:.85rem;font-weight:800}.feature-links{background:#f4ecdc;color:#244456;padding:54px 0}.feature-links .container{max-width:1100px}.feature-links h2{font:normal clamp(30px,4vw,48px)/1.2 Georgia,serif;margin:8px 0 12px}.feature-links p{line-height:1.75;max-width:740px}.feature-btn{display:inline-block;padding:11px 19px;border-radius:30px;background:#173c53;color:#fff!important;text-decoration:none;font-weight:750;margin:8px 10px 8px 0}.feature-btn.secondary{background:#d9bb82;color:#153549!important}.join-email{margin-top:24px}.join-email a{color:#ffe3a8;font-weight:800;text-decoration:underline}@media(max-width:700px){.magazine-cover-card{grid-column:span 6}}@media(max-width:440px){.magazine-cover-card{grid-column:span 12}}</style><style id="maryborough-gallery-link">
 .maryborough-gallery-card{grid-column:span 3;min-height:250px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;border-radius:12px;padding:22px;text-decoration:none;color:#fff;background:radial-gradient(circle at 76% 22%,#ba9c75 0 12%,transparent 12.5%),linear-gradient(145deg,#326478 0%,#19435a 48%,#0a2135 100%);box-shadow:inset 0 0 0 1px #ffffff24}
 .maryborough-gallery-card:before{content:"✦";position:absolute;top:12px;right:24px;font:normal 4.5rem Georgia,serif;color:#eacb9299}
@@ -133,6 +146,17 @@
     </div>
   </header>
   <main id="top">
+
+    <!-- Limited-edition Australian geocaching magazine announcement -->
+    <aside class="magazine-alert" aria-label="Geocaching magazine announcement">
+      <div class="magazine-alert-inner">
+        <div class="mag-kicker">📣 Attention, geocachers! ✨</div>
+        <h2>Geocaching News Australia is out now!</h2>
+        <p>Celebrate Australian geocaching adventures, stories and the people who make this community special. Discover the limited-edition magazine from Just Geocaching!</p>
+        <a href="https://justgeocaching.com/products/geocaching-news-australia-limited-edition-magazine" target="_blank" rel="noopener noreferrer">Explore the magazine ↗</a>
+      </div>
+    </aside>
+
     <section class="hero" aria-labelledby="heroTitle"><div class="hero-map-overlay" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div>
